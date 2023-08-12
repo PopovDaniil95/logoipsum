@@ -1,6 +1,6 @@
-const menuBtn = document.querySelector(".menu__btn");
-const menuMobile = document.querySelector(".menu__list");
+const menuBtn = document.getElementById("menu__btn_Id");
+const menuMobile = document.getElementById("menu__list_Id");
 
 menuBtn.addEventListener("click", () => {
-  menuMobile.classList.toggle(".menu--open");
+  menuMobile.classList.toggle("menu--open");
 });

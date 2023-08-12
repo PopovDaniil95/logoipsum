@@ -87,7 +87,7 @@ li {
 
 .grow__content {
   margin-top: -55px;
-  width: 460px;
+  max-width: 460px;
   flex: 1;
 }
 
@@ -132,7 +132,7 @@ li {
 }
 
 .info_content {
-  width: 460px;
+  max-width: 460px;
   flex: 1;
 }
 
@@ -214,7 +214,7 @@ li {
   font-weight: 700;
   line-height: 70px;
   letter-spacing: -0.876px;
-  width: 500px;
+  max-width: 500px;
 }
 
 .get-plan {
@@ -355,10 +355,11 @@ li {
     max-width: 800px;
   }
 
-  .logo_p_img {
-    max-width: 100%;
-    height: auto;
-    gap: 10px;
+  .logo_partners {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 50px;
   }
 
   .price-cost {
@@ -379,7 +380,7 @@ li {
     padding: 35px 35px 35px 35px;
     position: absolute;
     left: 0;
-    top: 0;
+    top: -20px;
     transform: translateY(-110%);
     transition: transform 0.5s ease;
   }
@@ -394,5 +395,37 @@ li {
 
   .menu__btn {
     display: flex;
+  }
+
+  .grow__inner {
+    flex-direction: column;
+  }
+
+  .grow__content {
+    align-content: center;
+    padding-top: 50px;
+  }
+
+  .grow__img {
+    padding-top: 50px;
+  }
+
+  .info-index {
+    padding-top: 50px;
+    flex-direction: column-reverse;
+  }
+
+  .info_img {
+    padding-top: 50px;
+  }
+
+  .info-in-depth {
+    padding-top: 50px;
+    flex-direction: column;
+  }
+
+  .get-plan {
+    flex-direction: column;
+    padding-top: 50px;
   }
 }
