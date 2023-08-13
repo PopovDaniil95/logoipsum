@@ -265,6 +265,13 @@ li {
   align-items: center;
 }
 
+.orange {
+  background: #ff7143;
+  width: 376px;
+  height: 473px;
+  margin-top: -15px;
+}
+
 .price-cost {
   color: #1d293f;
   text-align: center;
@@ -427,5 +434,17 @@ li {
   .get-plan {
     flex-direction: column;
     padding-top: 50px;
+  }
+
+  .buy-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .price-starter {
+    width: 75%;
+    height: 400px;
+    margin-top: 20px;
   }
 }
