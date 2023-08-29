@@ -1,0 +1,18 @@
+.partners__logo {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .partners__logo {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .partners__logo-list {
+    padding-top: 40px;
+    padding-right: 40px;
+  }
+}
