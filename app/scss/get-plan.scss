@@ -1,0 +1,39 @@
+.get-plan {
+  padding-top: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle {
+  display: flex;
+}
+
+.toggle__button {
+  width: 160px;
+  height: 55px;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle__button_active {
+  background-color: #5454d4;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.toggle__button:not(.toggle__button_active) {
+  background-color: #f7f7fb;
+  color: #19191b;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .get-plan {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+}

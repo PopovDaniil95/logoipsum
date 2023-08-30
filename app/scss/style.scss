@@ -1,8 +1,14 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
 body {
   color: #696871;
   font-family: "Mulish", sans-serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: -0.625px;
@@ -22,7 +28,6 @@ h1 {
   color: #19191b;
   font-family: "DM Sans", sans-serif;
   font-size: 80px;
-  font-style: normal;
   font-weight: 700;
   line-height: 77px;
   letter-spacing: -0.501px;
@@ -32,17 +37,30 @@ h2 {
   color: #19191b;
   font-family: "DM Sans", sans-serif;
   font-size: 50px;
-  font-style: normal;
   font-weight: 700;
   line-height: 77px;
   letter-spacing: -0.501px;
   margin-bottom: 20px;
 }
-@media (max-width: 1000px) {
-  h2 {
-    font-size: 37px;
-    line-height: 57px;
-  }
+
+h4 {
+  color: #19191b;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.75px;
+}
+
+.font-small {
+  color: #696871;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  margin-top: -5px;
 }
 
 .container {
@@ -58,230 +76,32 @@ h2 {
   align-items: center;
 }
 
-.btn_learn_more {
+.btn__learn-more {
   width: 100px;
   color: #5454d4;
   font-family: "DM Sans", sans-serif;
   font-size: 17px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: -0.531px;
-}
-
-.in_depth_img {
-  padding-top: 100px;
-  display: flex;
-  flex: 1;
-}
-
-.ability {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 100px;
-}
-
-.ability_container {
-  display: flex;
-  flex-direction: column;
-  width: 310px;
-  height: 220px;
-}
-
-.title-ability {
-  color: #19191b;
-  text-align: center;
-  font-family: "DM Sans", sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-  letter-spacing: -0.75px;
-  margin-top: -5px;
-}
-
-.text-ability {
-  color: #696871;
-  text-align: center;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: -0.5px;
-  margin-top: -5px;
-}
-
-.get-plan-text {
-  color: #19191b;
-  font-family: "DM Sans", sans-serif;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 70px;
-  letter-spacing: -0.876px;
-  max-width: 500px;
-}
-
-.get-plan {
-  padding-top: 75px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.toggle-container {
-  display: flex;
-}
-
-.toggle-button {
-  width: 160px;
-  height: 55px;
-  border: none;
-  cursor: pointer;
-}
-
-.active {
-  background-color: #5454d4;
-  color: #fff;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.toggle-button:not(.active) {
-  background-color: #f7f7fb;
-  color: #19191b;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.price-starter {
-  border-radius: 10px;
-  background: #f8f8f8;
-  width: 330px;
-  height: 440px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.orange {
-  background: #ff7143;
-  width: 376px;
-  height: 473px;
-  margin-top: -15px;
-}
-
-.price-cost {
-  color: #1d293f;
-  text-align: center;
-  font-family: "DM Sans", sans-serif;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 56px;
-  letter-spacing: -1.034px;
-  margin-top: -5px;
-}
-
-.btn-price {
-  margin-top: 10px;
-  width: 270px;
-  height: 60px;
-  border-radius: 10px;
-  border: 1px solid #eae9f2;
-  background: #fff;
-  color: #5454d4;
-  text-align: center;
-  font-family: "DM Sans", sans-serif;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.531px;
-  justify-content: center;
-  align-items: center;
-}
-
-.price-text {
-  margin-top: -2px;
-}
-
-.buy-section {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 50px;
-  padding-bottom: 100px;
-  gap: 15px;
 }
 
 @media (max-width: 1000px) {
-  .big-img {
-    max-width: 100%;
-    height: auto;
-  }
   body {
     font-size: 15px;
     line-height: 23px;
   }
 
-  .in-depth-img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .title-ability {
-    font-size: 18px;
-  }
-
-  .text-ability {
-    font-size: 12px;
-  }
-
-  .get-plan-text {
-    font-size: 45px;
-    line-height: 50px;
-  }
-
   .container {
     max-width: 800px;
   }
-
-  .price-cost {
-    font-size: 45px;
+  h2 {
+    font-size: 37px;
+    line-height: 50px;
   }
-
-  .btn-price {
-    width: 170px;
+  h4 {
+    font-size: 18px;
   }
-}
-
-@media (max-width: 700px) {
-  .flex {
-    padding-top: 50px;
-    flex-direction: column-reverse;
-  }
-
-  .info-in-depth {
-    padding-top: 50px;
-    flex-direction: column;
-  }
-
-  .get-plan {
-    flex-direction: column;
-    padding-top: 50px;
-  }
-
-  .buy-section {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .price-starter {
-    width: 75%;
-    height: 400px;
-    margin-top: 20px;
+  .font-small {
+    font-size: 12px;
   }
 }

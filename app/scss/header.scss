@@ -1,5 +1,5 @@
 .header__inner {
-  margin-top: 30px;
+  padding-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,15 +34,24 @@
   font-size: 15px;
 }
 
+.menu__list-item {
+  border-bottom: 2px solid #fff;
+}
+
+.menu__list-item:hover {
+  border-bottom: 2px solid #5454d4;
+}
+
 .btn_get_started {
   justify-content: center;
   align-items: center;
   margin-left: 10px;
   border-radius: 10px;
-  width: 210px;
-  height: 60px;
+  padding: 19px 60px;
   background: #ff7143;
   color: #fff;
+  font-size: 17px;
+  font-weight: 700;
 }
 
 @media (max-width: 700px) {
